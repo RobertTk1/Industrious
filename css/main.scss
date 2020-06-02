@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../images/bg.jpg") fixed center;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.navbar {
+  font-family: "Raleway", sans-serif;
+  background-color: black !important;
+
+  .navbar-brand {
+    color: snow;
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+
+  .Menu {
+    color: gray;
+    background-color: inherit !important;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding-bottom: 0.05rem;
+  }
+
+  .Menu:hover {
+    color: white;
+    .button div {
+      background-color: white;
+    }
+  }
+
+  .button div {
+    width: 13px;
+    height: 2.5px;
+    background-color: gray;
+    margin: 2px 8px;
+    border-radius: 0.5px;
+  }
+
+  #navbarNav a {
+    color: gray;
+  }
+
+  #navbarNav a:hover {
+    color: white;
+  }
+}
+
+.Welcome {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0;
+  margin: 0;
+  padding: 7rem 0;
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    /*-ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);*/
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(212, 7, 58);
+    background: linear-gradient(
+      90deg,
+      rgba(152, 26, 58, 1) 24%,
+      rgba(11, 0, 3, 1) 64%
+    );
+    opacity: 0.8;
+    z-index: 1;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-top: 7rem;
+  }
+
+  p {
+    font-weight: 400 !important;
+    color: rgb(177, 169, 169);
+    padding: 0 8rem;
+  }
+}
+
+.Main {
+  position: relative;
+  width: 100%;
+
+  .Overlay2 {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+    opacity: 0.95;
+    z-index: 2;
+  }
+
+  .Content {
+    margin: 0;
+    position: relative;
+    z-index: 3;
+    padding: 8rem 0;
+  }
+
+  .First {
+    padding: 0 17rem;
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-weight: 200;
+    }
+  }
+
+  .Cards {
+    margin: 2rem 0 6rem 0;
+    padding: 0 4rem;
+
+    .card {
+      margin: 1rem 0.8rem;
+      padding: 3rem 1.5rem 3rem 1.5rem;
+      border: none;
+      box-shadow: 1px 1px 8px;
+
+      .card-body {
+        h6 {
+          font-size: 1.2rem;
+        }
+      }
+      .Size {
+        font-size: 3.8rem;
+        color: rgb(190, 17, 17);
+        margin-bottom: 1rem;
+      }
+
+      h6 {
+        font-weight: 300;
+        font-size: 1.5rem;
+        padding: 1rem;
+      }
+
+      p {
+        font-weight: 300;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .Banner {
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    background-image: url("../images/cta01.jpg");
+    background-size: 110% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 2rem 0;
+    padding: 0;
+
+    .Overlay3 {
+      position: absolute;
+      background-color: red;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      opacity: 0.2;
+    }
+
+    .container {
+      position: relative;
+      padding: 5rem 4rem;
+
+      h1 {
+        font-weight: 200;
+        font-size: 2rem;
+        color: white;
+        padding-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: rgb(207, 204, 204);
+        text-shadow: 1px 1px 3px black;
+      }
+    }
+  }
+
+  .Team {
+    padding: 0;
+    margin: 0;
+    .title {
+      padding: 0 14rem;
+      h1 {
+        padding-top: 5rem;
+        font-weight: 300;
+        font-size: 2.2rem;
+        color: rgb(87, 86, 86);
+      }
+
+      p {
+        padding-top: 1rem;
+        font-weight: 300;
+      }
+    }
+
+    .Team-c {
+      padding: 3rem 8rem;
+    }
+
+    .card {
+      padding: 2.3rem 2.3rem 0.8rem 2.3rem;
+
+      margin: 0 0.6rem 2rem 0.6rem;
+
+      .card-title div {
+        background-color: rgb(190, 190, 190);
+        height: 9rem;
+        width: 1.5rem;
+      }
+      .card-title p {
+        position: relative;
+        font-style: italic;
+        font-size: 1.1rem;
+        font-weight: 300;
+        top: 1.4rem;
+        padding-left: 1.6rem;
+      }
+
+      img {
+        position: relative;
+        left: -1.8rem;
+        height: 3.5rem;
+      }
+      .John {
+        position: relative;
+        left: -1rem;
+        margin-right: 1rem;
+      }
+
+      .card-body p {
+        position: relative;
+        top: 1rem;
+        font-size: 0.8rem;
+        a {
+          color: red;
+          font-weight: 500;
+          cursor: default;
+        }
+        a:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.Footer {
+  height: 70vh;
+  width: 100%;
+  padding: 6rem;
+  color: white;
+  background-color: black;
+
+  h1 {
+    font-weight: 400;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .Sec {
+    margin: 0 2rem;
+  }
+
+  .Info {
+    font-size: 1rem;
+    font-weight: 200;
+    width: 40%;
+
+    p {
+      color: rgb(158, 157, 157);
+    }
+  }
+
+  .Table {
+    padding: 0 1rem;
+    hr {
+      background-color: gray;
+      height: 0.02rem;
+      width: 13rem;
+      margin: 0.6rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(146, 145, 145);
+    }
+
+    a:hover {
+      color: rgb(173, 6, 6);
+    }
+  }
+
+  .Social {
+    padding-left: 2rem;
+    .btn {
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(146, 145, 145);
+      margin: 2rem;
+    }
+    .btn:hover {
+      a {
+        color: rgb(173, 6, 6);
+      }
+    }
+  }
+
+  .Copyright {
+    font-size: 0.8rem;
+  }
+
+  .Line {
+    hr {
+      background-color: gray;
+      height: 0.01rem;
+      width: 100%;
+      margin: 0.6rem;
+    }
+  }
+}
